@@ -31,7 +31,16 @@ export default function Search(props) {
     const data1 = {
       id: id,
     };
-    var result = window.confirm('Are you sure you want to buy the book?');
+    var result;
+    if(e.currentTarget.name == cookies.get('email'))
+    {
+      result=window.confirm("Do you want to delete your listed book?");
+    }
+    else
+    {
+      result = window.confirm('Are you sure you want to buy the book?');
+    }
+    
     if (result) {
       Axios.post('https://book-backend.vercel.app/users/delete', data1).then((res) => {
         alert('Purchase Successful');
@@ -86,6 +95,7 @@ export default function Search(props) {
                   <button
                     className="details_btn"
                     id={item._id}
+                    name={item.email}
                     onClick={handleClick}>
                     {' '}
                    {item.email== cookies.get('email')?"DELETE":"BUY"}{' '}
