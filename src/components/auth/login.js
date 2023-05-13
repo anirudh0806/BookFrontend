@@ -33,9 +33,9 @@ export default function Login(props) {
 
   let error = '';
 
-  if (message) {
-    error = <div className="alert">{message}</div>;
-  }
+  // if (message) {
+  //   error = <div className="abc" style={{color:"white"}}>{message}</div>;
+  // }
 
   return (
     <div className="Form">
@@ -81,7 +81,7 @@ export default function Login(props) {
               placeholder="Enter your password"
               onChange={handleInputChange}
             />
-          </div>
+          </div>                                                                                                                                    <br></br><br></br>
           <button className="button" type="submit">
             <b>Login</b>
           </button>{' '}
@@ -89,6 +89,9 @@ export default function Login(props) {
           <span className="register">
             Not a member? Register <Link to="/register">here</Link>
           </span>
+          <br></br>
+
+          <div className="abc" style={{color:"red",fontWeight:"bolder",fontSize:"larger",margin:"2%" }}>{message}</div>
         </div>
       </form>
     </div>
