@@ -58,7 +58,7 @@ export default function App() {
     <div className="container1 justify-content-center mx-auto px-4">
       <div>
         <br />
-        <br />
+        
         <form className="form23" onSubmit={onSubmit}>
           <input
             type="text"
@@ -93,6 +93,7 @@ export default function App() {
             value={phoneno}
             className="form-control form-group"
           />
+          <br />
           <div className="d-flex justify-content-center">
             <input
               type="submit"

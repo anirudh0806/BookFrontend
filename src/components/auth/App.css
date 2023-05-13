@@ -3,12 +3,12 @@
     background-color: white;
     /* background-image: url("https://images.wallpaperscraft.com/image/library_multistorey_architecture_139118_1920x1080.jpg"); */
     background-repeat: no-repeat;
-    margin-top: 8%;
+    margin-top: 4%;
     
-    width: 750px;
+    width: 700px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    height: 350px;
+    height: 300px;
     
   }
 

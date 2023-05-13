@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top">
       <div className="container-fluid">
-        <NavLink className="navbar-brand fw-bold fs-4 px-2" to="/">
+        <NavLink className="navbar-brand fw-bold fs-4 px-2" to="/profile">
           <b>Book Trading Platform</b>{' '}
         </NavLink>
         <button

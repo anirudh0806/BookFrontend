@@ -67,11 +67,8 @@ export default function Search(props) {
       <Navbar />
       <div style={{ height: "100vh", backgroundColor: "#696969" }} >
         <div>
-          <Link to="/profile" style={{}} className="position-fixed btn btn-danger m-2 px-5">
-            {' '}
-            Back{' '}
-          </Link>
-          <div className='text-center'><b className="text-center title m-auto">LIBRARY</b></div>
+          
+          <div className='text-center'><b className="text-center title m-auto">Library</b></div>
         </div>
         <ul style={{ listStyleType: 'none' }}>
           <div>
