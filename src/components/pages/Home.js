@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import "./Home.css";
 import lend from "./lend.jpg";
@@ -9,23 +9,29 @@ function Home() {
 
       <div className="home">
         <div className="header">
-        <h2 style={{
+        <h2 className="headerText" style={{
               display:"inline-block",
               marginTop:25,
 		        	marginLeft:"10%",
 		        	marginRight:0,
-              fontFamily:"arial",
-              fontWeight:"bold",
-              fontSize:"250%",
-               color:"rgb(26, 180, 26)",
               
-            }}>BOOK EXCHANGE PLATFORM</h2>
-        <Link to="/register"><button className="buttoncomp">Register</button></Link>
-        <Link to="/login"><button className="buttoncomp">Login</button></Link>
+              fontWeight:"bold",
+              fontSize:"220%",
+               color: "yellow",
+              
+            }}>BOOK TRADING SYSTEM</h2>
+        <Link to="/register">
+          <button type="button"  className="buttoncomp btn btn-success btn-lg" >REGISTER</button>
+          </Link>
+
+        <Link to="/login">
+          <button type="button"  className="buttoncomp btn btn-success btn-lg" >LOGIN</button>
+          
+          </Link>
         </div>
         <div className="main">
           <div className="textcomp" style={{
-              padding:100,
+              padding:80,
             }}>
             <div style={{
 
