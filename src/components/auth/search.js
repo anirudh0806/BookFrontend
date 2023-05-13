@@ -90,7 +90,7 @@ export default function Search(props) {
                     {' '}
                    {item.email== cookies.get('email')?"DELETE":"BUY"}{' '}
                   </button>
-                 {item.email== cookies.get('email')? <button
+                 {item.email != cookies.get('email')? <button
                     className="details_btn"
                     id={item._id}
                     onClick={handleCart}>
