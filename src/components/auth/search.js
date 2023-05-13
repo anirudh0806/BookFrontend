@@ -88,15 +88,15 @@ export default function Search(props) {
                     id={item._id}
                     onClick={handleClick}>
                     {' '}
-                    BUY{' '}
+                   {item.email== cookies.get('email')?"DELETE":"BUY"}{' '}
                   </button>
-                  <button
+                 {item.email== cookies.get('email')? <button
                     className="details_btn"
                     id={item._id}
                     onClick={handleCart}>
                     {' '}
                     Add to cart{' '}
-                  </button>
+                  </button>:null}
                   <br />
                 </li>
                 <br />
