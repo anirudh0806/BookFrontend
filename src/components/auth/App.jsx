@@ -43,7 +43,7 @@ export default function App() {
     };
 
     axios
-      .post('https://book-backend.vercel.app/users/profile', registered)
+      .post('https://book-backend.vercel.app/users/dashboard', registered)
       .then((response) => console.log(response.data));
     alert('Book Added');
     setBookname('');

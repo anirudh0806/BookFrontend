@@ -21,7 +21,7 @@ class App extends Component {
           <Login />
         </Route>
         <Route path="/register" component={Register} />
-        <Route path="/profile">
+        <Route path="/dashboard">
           <Fetch></Fetch>
         </Route>
         <Route exact path="/search">

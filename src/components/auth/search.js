@@ -32,15 +32,13 @@ export default function Search(props) {
       id: id,
     };
     var result;
-    if(e.currentTarget.name == cookies.get('email'))
-    {
-      result=window.confirm("Do you want to delete your listed book?");
+    if (e.currentTarget.name == cookies.get('email')) {
+      result = window.confirm("Do you want to delete your listed book?");
     }
-    else
-    {
+    else {
       result = window.confirm('Are you sure you want to buy the book?');
     }
-    
+
     if (result) {
       Axios.post('https://book-backend.vercel.app/users/delete', data1).then((res) => {
         alert('Purchase Successful');
@@ -69,7 +67,7 @@ export default function Search(props) {
       <Navbar />
       <div style={{ height: "100vh", backgroundColor: "#696969" }} >
         <div>
-          <Link to="/profile" style={{}} className="position-fixed btn btn-danger m-2 px-5">
+          <Link to="/dashboard" style={{}} className="position-fixed btn btn-danger m-2 px-5">
             {' '}
             Back{' '}
           </Link>
@@ -99,15 +97,15 @@ export default function Search(props) {
                     name={item.email}
                     onClick={handleClick}>
                     {' '}
-                   {item.email== cookies.get('email')?"DELETE":"BUY"}{' '}
+                    {item.email == cookies.get('email') ? "DELETE" : "BUY"}{' '}
                   </button>
-                 {item.email != cookies.get('email')? <button
+                  {item.email != cookies.get('email') ? <button
                     className="details_btn"
                     id={item._id}
                     onClick={handleCart}>
                     {' '}
                     Add to cart{' '}
-                  </button>:null}
+                  </button> : null}
                   <br />
                 </li>
                 <br />
