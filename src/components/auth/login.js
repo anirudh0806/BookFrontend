@@ -18,7 +18,7 @@ export default function Login(props) {
     await Axios.post('https://book-backend.vercel.app/users/login', data1)
       .then((res) => {
         cookies.set('email', email, { path: '/' });
-        history.push('/dashboard');
+        history.push('/profile');
       })
       .catch((error) => {
         console.log(error);
