@@ -44,6 +44,7 @@ export default function Search(props) {
     if (result) {
       Axios.post('https://book-backend.vercel.app/users/delete', data1).then((res) => {
         alert('Purchase Successful');
+        forceUpdate();
       });
     }
   }
