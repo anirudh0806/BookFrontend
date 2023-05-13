@@ -67,7 +67,7 @@ export default function Search(props) {
       <Navbar />
       <div style={{ height: "100vh", backgroundColor: "#696969" }} >
         <div>
-          <Link to="/dashboard" style={{}} className="position-fixed btn btn-danger m-2 px-5">
+          <Link to="/profile" style={{}} className="position-fixed btn btn-danger m-2 px-5">
             {' '}
             Back{' '}
           </Link>
