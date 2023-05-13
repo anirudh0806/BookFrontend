@@ -2,7 +2,7 @@ import Cookies from 'universal-cookie';
 import { useHistory } from 'react-router-dom';
 import { useState, useEffect ,useReducer } from 'react';
 import Axios from 'axios';
-
+import Navbar from "../pages/Navbar"
 export default function Cart() {
   const cookies = new Cookies();
   const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
@@ -49,7 +49,9 @@ export default function Cart() {
     } else history.push('/login');
   });
   return (
-    <div className="m-auto p-5 ">
+    <>
+    <Navbar></Navbar>
+    <div className="m-auto p-5 " style={{ backgroundColor:"#c7c2c2", height:"100vh"}}>
       <p className="text-center h2 p-4">Cart</p>
       <table className="table table-bordered table-hover">
         <thead>
@@ -77,5 +79,6 @@ export default function Cart() {
         </button>
       </div>
     </div>
+    </>
   );
 }

@@ -73,7 +73,7 @@ export default function Searchbar() {
     <Navbar/>
       <form onSubmit={handleSubmit} className="" >
         <div className="card-header main-search " style={{ backgroundColor:"#696969"}}>
-          <div className="row mx-auto justify-content-center" >
+          <div className="row mx-auto justify-content-center"  >
             <div className="col-12 col-md-5 col-xl-5">
               <input
                 onChange={handleChange}
@@ -91,7 +91,7 @@ export default function Searchbar() {
             </div>
           </div>
         </div>
-        <div className="row container mx-auto">
+        <div className="row container mx-auto" >
           {result.map((book, index) => (
             <div key={index} className="child col-4 text-center">
               <div className="text-center">
