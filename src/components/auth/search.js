@@ -24,7 +24,7 @@ export default function Search(props) {
           setLoaded(true);
         });
     } else history.push('/login');
-  });
+  }, []);
 
   function handleClick(e) {
     const id = e.currentTarget.id;
@@ -65,7 +65,7 @@ export default function Search(props) {
           </Link>
           <div className='text-center'><b className="text-center title m-auto">LIBRARY</b></div>
         </div>
-        <ul>
+        <ul style={{ listStyleType: 'none' }}>
           <div>
             {data.length > 0 ? data.map((item) => (
               <div key={item._id}>

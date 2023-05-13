@@ -47,7 +47,7 @@ export default function Cart() {
           setCart(json.user.cart);
         });
     } else history.push('/login');
-  });
+  },[]);
   return (
     <>
     <Navbar></Navbar>

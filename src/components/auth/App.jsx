@@ -16,16 +16,20 @@ export default function App() {
   const [phoneno, setPhoneno] = useState('');
   useEffect(() => {
     if (!cookies.get('email')) history.push('/login');
-  });
+    else
+    {
+      setEmail(cookies.get('email'))
+    }
+  },[]);
   function changeBookName(event) {
     setBookname(event.target.value);
   }
   function changeUsername(event) {
     setUsername(event.target.value);
   }
-  function changeEmail(event) {
-    setEmail(event.target.value);
-  }
+  // function changeEmail(event) {
+  //   setEmail(event.target.value);
+  // }
   function changePhoneno(event) {
     setPhoneno(event.target.value);
   }
@@ -44,7 +48,7 @@ export default function App() {
     alert('Book Added');
     setBookname('');
     setUsername('');
-    setEmail('');
+    setEmail(cookies.get('email'));
     setPhoneno('');
   }
   return (
@@ -72,14 +76,14 @@ export default function App() {
             value={username}
             className="form-control form-group"
           />
-          <input
+          {/* <input
             type="email"
             required
             placeholder="Email"
             onChange={changeEmail}
             value={email}
             className="form-control form-group"
-          />
+          /> */}
           <input
             type="text"
             required
