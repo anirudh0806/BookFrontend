@@ -24,7 +24,7 @@ export default function Search(props) {
           setLoaded(true);
         });
     } else history.push('/login');
-  }, []);
+  }, [ignored]);
 
   function handleClick(e) {
     const id = e.currentTarget.id;
