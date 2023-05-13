@@ -52,7 +52,7 @@ export default function Cart() {
     <>
     <Navbar></Navbar>
     <div className="m-auto p-5 " style={{ backgroundColor:"#A9A9A9", height:"100vh"}}>
-      <p className="text-center h2 p-4" style={{color:"greenyellow",fontWeight:"bold"}}>CART</p>
+      <p className="text-center h2 p-4" style={{color:"red",fontWeight:"bold"}}>CART</p>
       <table className="table table-bordered table-hover text-center">
         <thead>
           <tr>
