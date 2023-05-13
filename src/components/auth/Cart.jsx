@@ -51,9 +51,9 @@ export default function Cart() {
   return (
     <>
     <Navbar></Navbar>
-    <div className="m-auto p-5 " style={{ backgroundColor:"#b9b0b0", height:"100vh"}}>
-      <p className="text-center h2 p-4">Cart</p>
-      <table className="table table-bordered table-hover">
+    <div className="m-auto p-5 " style={{ backgroundColor:"#A9A9A9", height:"100vh"}}>
+      <p className="text-center h2 p-4" style={{color:"greenyellow",fontWeight:"bold"}}>CART</p>
+      <table className="table table-bordered table-hover text-center">
         <thead>
           <tr>
             <th scope="col">Book Name</th>
