@@ -29,9 +29,9 @@ const Header = () => {
             <button type="button">REGISTER</button>
           </div>
           <div className="col">
-            <Link to="/library"><div className="card card1"></div></Link>
+            <Link to="/library"><div className="cardc card1"></div></Link>
             <br />
-            <Link to="/find"><div className="card card2"></div></Link>
+            <Link to="/find"><div className="cardc card2"></div></Link>
           </div>
         </div>
       </div>

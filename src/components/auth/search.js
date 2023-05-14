@@ -65,9 +65,9 @@ export default function Search(props) {
   return isLoaded ? (
     <>
       <Navbar />
-      <div style={{ height: "100vh", backgroundColor: "#696969" }} >
+      <div style={{ height: "120%", backgroundColor: "#696969" }} >
         <div>
-          
+
           <div className='text-center'><b className="text-center title m-auto">Library</b></div>
         </div>
         <ul style={{ listStyleType: 'none' }}>
