@@ -8,7 +8,7 @@ import Fetch from './components/auth/App';
 import Search from './components/auth/search';
 import Searchbar from './components/auth/searchbar';
 import Cart from './components/auth/Cart';
-
+import Landing from './components/pages/Landing'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +21,7 @@ class App extends Component {
           <Login />
         </Route>
         <Route path="/register" component={Register} />
-        <Route exact path="/profile">
+        <Route path="/profile">
           <Fetch></Fetch>
         </Route>
         <Route exact path="/search">
@@ -32,6 +32,9 @@ class App extends Component {
         </Route>
         <Route exact path="/Cart">
           <Cart />
+        </Route>
+        <Route exact path="/dashboard">
+          <Landing />
         </Route>
       </Router>
     );

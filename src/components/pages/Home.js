@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import {Link} from "react-router-dom";
 import "./Home.css";
 import lend from "./lend.jpg";
@@ -47,9 +47,9 @@ function Home() {
 
           }}>
             <img src={lend} alt="image"/>
-            <h4 className="textcomp">Sell Books</h4>
+            <h4 className="textcomp">Trade Books</h4>
             <p className="textcomp">
-              Dont need a book you own?<br/>Sell used books lying idle on the shelf.
+              Want to offer your books to others?<br/>Trade used books lying idle on the shelf.
             </p>
           </div>
           <div style={{
@@ -58,9 +58,9 @@ function Home() {
             left:400,
           }}>
             <img src={find} alt="image"/>
-            <h4 className="textcomp">Buy Books</h4>
+            <h4 className="textcomp">Buy New Books</h4>
             <p className="textcomp">
-              Struggling to find books you like?<br/>Search for and Buy books with ease
+              Struggling to find books you like?<br/>Search for and Buy books with ease with our massive collection
             </p>
           </div>
         </div>
