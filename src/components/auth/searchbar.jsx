@@ -25,7 +25,7 @@ export default function Searchbar() {
           setCart(json.user.cart);
         });
     } else history.push('/login');
-  });
+  },[]);
 
   function addToCart(bookName, author, _id) {
     let data = {
