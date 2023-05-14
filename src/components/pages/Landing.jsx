@@ -26,16 +26,18 @@ const Header = () => {
             </p>
             {/* <button type="button">EXPLORE</button> */}
           </div>
-          <div className="col">
+          <div className="col3">
             <Link to="/search">
               <div className="cardc card1" ></div>
+              <div style={{color:"white",marginLeft:"10%",fontSize:"90%",fontWeight:"bolder"}}><b>TRADING</b></div>
             </Link>
-            <div style={{color:"white",marginLeft:"10%",fontSize:"90%"}}>TRADING</div>
+            
             
             <Link to="/find">
               <div className="cardc card2"></div>
+              <div style={{color:"white",marginLeft:"7%",fontSize:"80%"}}><b>BUY NEW BOOKS FROM THE <br />LATEST COLLECTION</b></div>
             </Link>
-            <div style={{color:"white",marginLeft:"3%",fontSize:"80%"}}>BUY NEW BOOKS FROM THE <br />LATEST COLLECTION</div>
+            
           </div>
         </div>
       </div>
