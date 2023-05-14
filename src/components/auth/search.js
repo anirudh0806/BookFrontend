@@ -68,7 +68,7 @@ export default function Search(props) {
       <div style={{ height: "120%", backgroundColor: "#696969" }} >
         <div>
 
-          <div className='text-center'><b className="text-center title m-auto">Library</b></div>
+          <div className='text-center'><b className="text-center title m-auto">PURCHASE USED BOOKS</b></div>
         </div>
         <ul style={{ listStyleType: 'none' }}>
           <div>

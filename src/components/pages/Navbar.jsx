@@ -31,13 +31,18 @@ const Navbar = () => {
               </NavLink>
             </li> */}
             <li className="nav-item">
-              <NavLink className="nav-link" to="/profile">
+              <NavLink className="nav-link" to="/dashboard">
                 Dashboard
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/profile">
+                Sell Books
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/search">
-                Library
+                Listed Books
               </NavLink>
             </li>
             <li className="nav-item">
