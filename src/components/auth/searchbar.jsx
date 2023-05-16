@@ -72,7 +72,7 @@ export default function Searchbar() {
     <div >
     <Navbar/>
       <form onSubmit={handleSubmit} className="" >
-        <div className="card-header main-search " style={{ backgroundColor:"#696969"}}>
+        <div className="card-header main-search " style={{ backgroundColor:"#48D1CC"}}>
           <div className="row mx-auto justify-content-center"  >
             <div className="col-12 col-md-5 col-xl-5">
               <input

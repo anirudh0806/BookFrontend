@@ -52,7 +52,7 @@ export default function App() {
     setPhoneno('');
   }
   return (
-    <div  style={{height: "100vh" ,backgroundColor:"#696969"}}>
+    <div  style={{height: "100vh" ,backgroundColor:"#000030"}}>
     <Navbar />
 
     <div className="container1 justify-content-center mx-auto px-4">

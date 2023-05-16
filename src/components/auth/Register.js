@@ -50,15 +50,16 @@ export default class Register extends Component {
             {' '}
             Back{' '}
           </Link>
-          <div className="text-center">
-            <h3>
+          <div className="text-center" >
+            <br /><br /><br /><br />
+            <h1 style={{"color":"aqua"}}>
               Create an Account
               <br />
               Please fill the details to register!
               <br />
               <br />
               <br />
-            </h3>
+            </h1>
             {error}
             <div className="input">
               <input

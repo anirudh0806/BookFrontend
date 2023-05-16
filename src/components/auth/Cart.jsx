@@ -57,7 +57,7 @@ export default function Cart() {
       <Navbar></Navbar>
       <div
         className="m-auto p-5 "
-        style={{ backgroundColor: "#A9A9A9", height: "100vh" }}
+        style={{ backgroundColor: "#B0E0E6", height: "100vh" }}
       >
         <p
           className="text-center h2 p-4"

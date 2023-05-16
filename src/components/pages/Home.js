@@ -38,8 +38,9 @@ function Home() {
               color:"white",
               fontSize:20,
               textAlign:"justified",
-            }}><h4>Ever felt that selling books is a tiring and prolonged process?</h4><br/><p>Don't you worry because our website makes it simple by connecting the buyer and the seller with a user-friendly interface. Exchanging books was never this easy!<br></br><b>Log in or Register to use the tool.</b><br></br></p></div>
+            }}><h4>Ever felt that selling books is a tiring and prolonged process?</h4><br/><p>Don't you worry because our website makes it simple by connecting the buyer and the seller with a user-friendly interface. Exchanging books was never this easy!<br></br><b>Log in or Register to use this website.</b><br></br></p></div>
           </div>
+          <Link to="/login">
           <div style={{
             display:"inline-block",
             position:"relative",
@@ -52,6 +53,9 @@ function Home() {
               Want to offer your books to others?<br/>Trade used books lying idle on the shelf.
             </p>
           </div>
+          </Link>
+
+          <Link to="/login">
           <div style={{
             display:"inline-block",
             position:"relative",
@@ -63,6 +67,7 @@ function Home() {
               Struggling to find books you like?<br/>Search for and Buy books with ease with our massive collection
             </p>
           </div>
+          </Link>
         </div>
       </div>
 

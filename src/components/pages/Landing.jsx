@@ -19,7 +19,7 @@ const Header = () => {
         <Navbar></Navbar>
         <div className="main2">
           <div className="col col1">
-            <h2>WELCOME TO THE BOOK TRADING PLATFORM!</h2>
+            <h2 style={{"color":"#00FF00"}}> WELCOME TO THE BOOK TRADING PLATFORM!</h2>
             <p>
               <br />
               If you love books, you are at the right place!
@@ -29,13 +29,13 @@ const Header = () => {
           <div className="col3">
             <Link to="/search">
               <div className="cardc card1" ></div>
-              <div style={{color:"white",marginLeft:"10%",fontSize:"90%",fontWeight:"bolder"}}><b>TRADING</b></div>
+              <div style={{color:"#DC143C",marginLeft:"10%",fontSize:"90%",fontWeight:"bolder",fontFamily:"Arial"}}><b>TRADING</b></div>
             </Link>
             
             
             <Link to="/find">
               <div className="cardc card2"></div>
-              <div style={{color:"white",marginLeft:"7%",fontSize:"80%"}}><b>BUY NEW BOOKS FROM THE <br />LATEST COLLECTION</b></div>
+              <div style={{color:"#B22222",marginLeft:"7%",fontSize:"90%",fontWeight:"bolder",fontFamily:"Arial"}}><b>BUY NEW BOOKS FROM <br />THE LATEST COLLECTION</b></div>
             </Link>
             
           </div>
