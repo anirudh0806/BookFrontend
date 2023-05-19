@@ -137,7 +137,7 @@ export default function Searchbar() {
                         onClick={(e) => {
                           alert('Successfully Purchased');
                         }}>
-                        Buy Now:
+                        Buy Now
                       </Button>
                       <Button
                         className="mx-2"
