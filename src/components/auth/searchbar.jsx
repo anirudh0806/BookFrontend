@@ -14,8 +14,9 @@ export default function Searchbar() {
   const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
   const [result, setResult] = useState([]);
   const [apiKey, setApiKey] = useState(
-    'AIzaSyCqi37mzRrzkBrDZDb0BX9_IarX5iMOT88'
+    'AIzaSyD7wVRQG3hTVH4YwZzxGxZdkqVqetLzbSs'
   );
+
   const [cart, setCart] = useState([]);
   useEffect(() => {
     if (cookies.get('email')) {
