@@ -53,7 +53,7 @@ export default function Search(props) {
       cart: cart,
       email: cookies.get('email'),
     };
-    var result = window.confirm('Are you sure you want to buy the book?');
+    var result = window.confirm('Are you sure you want to add the book to cart?');
     if (result) {
       Axios.post('https://book-backend.vercel.app/users/add', data).then((res) => {
         console.log(res);
@@ -96,6 +96,7 @@ export default function Search(props) {
                     {' '}
                     {item.email == cookies.get('email') ? "DELETE" : "BUY"}{' '}
                   </button>
+
                   {item.email != cookies.get('email') ? <button
                     className="details_btn"
                     id={item._id}
