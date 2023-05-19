@@ -65,7 +65,7 @@ export default function Search(props) {
   return isLoaded ? (
     <>
       <Navbar />
-      <div style={{ height: "120%", backgroundColor: "#2F4F4F" }} >
+      <div style={{ minHeight: "105%", height:"100vh", backgroundColor: "#2F4F4F" }} >
         <div>
 
           <div className='text-center'><b className="text-center title m-auto">PURCHASE USED BOOKS</b></div>
