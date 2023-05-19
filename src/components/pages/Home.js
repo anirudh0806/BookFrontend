@@ -19,7 +19,7 @@ function Home() {
               fontSize:"220%",
                color: "yellow",
               
-            }}>BOOK TRADING SYSTEM</h2>
+            }}>BOOK TRADING PLATFORM</h2>
         <Link to="/register">
           <button type="button"  className="buttoncomp btn btn-success btn-lg" >REGISTER</button>
           </Link>
