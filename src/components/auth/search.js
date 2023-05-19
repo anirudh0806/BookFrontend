@@ -83,7 +83,7 @@ export default function Search(props) {
                     Author &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <b>&nbsp;&nbsp;{item.author}</b>
                   </p>
                   <p className="details">
-                    Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <b>&nbsp;&nbsp;{item.email}</b>
+                    Email ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <b>&nbsp;&nbsp;{item.email}</b>
                   </p>
                   <p className="details">
                     Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <b>&nbsp;&nbsp;{item.phoneno}</b>
