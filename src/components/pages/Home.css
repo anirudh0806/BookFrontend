@@ -1,55 +1,319 @@
+/* Import Inter Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+/* Root Colors */
+:root {
+  --primary-green: #4caf50;
+  --primary-green-hover: #45a049;
+  --bg-black: #000000;
+  --bg-black-soft: #111111;
+  --bg-card: #0a0a0a;
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+  --accent-muted: #6b7280;
+}
 
-.headerText
-{
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
+/* GLOBAL FONT + RESET */
+body, html, p, span, div, h1, h2, h3, h4, h5, h6, a, button {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  background-color: var(--bg-black);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.buttoncomp{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-	padding:10px;
-    margin:20px;
-    border-width:2px;
-    background-color:#49d390;
-    color:#01295C;
-    border-radius:20px;
-    float:right;
+
+/* HEADINGS */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
 }
-.buttoncomp:hover {
-    background-color: #E3132C; 
-    color:yellow;
-    
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* TEXT UTILITIES */
+.text-lg { font-size: 1.125rem; }
+.text-sm { font-size: 0.875rem; }
+.text-xs { font-size: 0.75rem; }
+
+.text-muted {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.text-white {
+  color: var(--text-main) !important;
+  font-weight: 600;
+}
+
+/* STATS */
+.stats-green {
+  color: var(--primary-green) !important;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  animation: countUp 0.6s ease-out;
+}
+
+/* BUTTONS */
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-transform: none;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-success {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-green-hover);
+  border-color: var(--primary-green-hover);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+  transform: translateY(-2px);
+}
+
+/* DISPLAY HEADINGS */
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  color: #fff !important;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-muted) !important;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* RESPONSIVE HEADINGS */
+@media (max-width: 768px) {
+  .display-4 { font-size: 2.5rem !important; }
+  .lead { font-size: 1.1rem !important; }
+}
+
+/* CARDS */
+.card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid #222 !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+  padding: 1.5rem;
+  background-color: var(--bg-card) !important;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: var(--text-main) !important;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* LAYOUT */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--bg-black) !important;
+}
+
+.bg-black,
+.bg-opacity-75,
+header,
+footer,
+section,
+.container,
+.row,
+.col-md-4 {
+  background-color: var(--bg-black) !important;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%) !important;
+}
+
+.container {
+  max-width: 1240px !important;
+  background-color: transparent !important;
+}
+
+/* HEADER & FOOTER */
+header {
+  border-bottom: 1px solid #333 !important;
+}
+
+footer {
+  border-top: 1px solid #333 !important;
+}
+
+header h1 {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+header h1 i {
+  font-size: 1.5rem !important;
+  margin-right: 0.5rem !important;
+}
+
+/* SPACING UTILITIES */
+.btn-spacing { margin-right: 1rem !important; }
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .hero-buttons {
+    flex-direction: row;
+    gap: 1rem;
   }
-.header{
-    /* border-radius:20px 20px 0px 0px; */
-    height:100px;
-    width:auto;
-    margin:0px auto;
-    background-color: #00004d; 
-    color: aqua;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-}
-.bodycomp{
-    background-color:aqua;
-}
-.textcomp{
-    color:chartreuse;
-    text-align: justify;
-}
-.main{
-    /* background-color: black; */
-    margin: 0px auto;
+
+  .hero-buttons .btn {
     width: auto;
-    height: 1650px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    /* border-radius:0px 0px 20px 20px; */
-    height: 600px;
-    
-    background-blend-mode: screen;
-    background-color:black;
-  
+  }
 }
+
+/* OVERRIDES */
+.min-vh-100 {
+  background-color: var(--bg-black) !important;
+}
+
+.border-secondary {
+  border-color: #333 !important;
+}
+
+/* ACCESSIBILITY + SELECTION */
+::selection {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.btn:focus, .btn:focus-visible {
+  outline: 2px solid var(--primary-green);
+  outline-offset: 2px;
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ANIMATIONS */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-heading {
+  font-size: 5rem;
+  font-weight:bolder;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
