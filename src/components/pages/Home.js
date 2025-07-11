@@ -26,14 +26,14 @@ function Home() {
       <section className="py-5 bg-black text-center section-padding">
         <div className="container">
           <h2 className="hero-heading fw-black text-white" >
-            <span className="text-success">Exchange Books</span> <span className="text-success d-block mt-2">With Ease</span>
+            <span >Book Repository.</span> <span className="d-block mt-1">Read and Thrive!</span>
           </h2>
           <p className="lead mt-3 text-muted">
             Connect with fellow book lovers. Buy, sell, and discover your next favorite read through our seamless exchange platform.
           </p>
           <div className="mt-4 d-flex flex-column flex-sm-row justify-content-center align-items-center">
   <Link to="/register" className="btn btn-success btn-lg px-4 py-2 mb-3 mb-sm-0 mr-sm-4">
-    Start Trading
+    Join the Community
   </Link>
   <Link to="/login" className="btn btn-outline-light btn-lg px-4 py-2">
     Browse Books
@@ -50,15 +50,15 @@ function Home() {
         <div className="container">
           <div className="row gy-4">
             <div className="col-md-4">
-              <h3 className="stats-green">10,000+</h3>
+              <h3 className="stats-green">10000+</h3>
               <p className="text-muted fw-semibold">Books Available</p>
             </div>
             <div className="col-md-4">
-              <h3 className="stats-green">5,000+</h3>
+              <h3 className="stats-green">100+</h3>
               <p className="text-muted fw-semibold">Active Users</p>
             </div>
             <div className="col-md-4">
-              <h3 className="stats-green">25,000+</h3>
+              <h3 className="stats-green">250+</h3>
               <p className="text-muted fw-semibold">Books Exchanged</p>
             </div>
           </div>
